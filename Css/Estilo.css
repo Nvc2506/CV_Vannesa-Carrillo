@@ -1,0 +1,248 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #222;
+
+    
+    background: linear-gradient(120deg, #8ac0db, #a1a1a1, #f4f3f5);
+    background-size: 400% 400%;
+    animation: gradientMove 20s ease infinite; 
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+.social-icons li {
+    margin: 12px 0;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+/* Colores */
+.social-icons li:nth-child(1) a { color: #93bee9; } 
+.social-icons li:nth-child(2) a { color: #7db176; } 
+.social-icons li:nth-child(3) a { color: #1877f2; } 
+.social-icons li:nth-child(4) a { color: #e1306c; } 
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #040505;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #0d0d0e;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.02);
+}
+
+
+.separator {
+    border: none;
+    height: 5px;
+    width: 100%;
+    margin: 0 0 30px 0;
+    background: linear-gradient(90deg, #0077b6, #a1a1a1, #000000); /* Azul - Gris - Negro */
+    border-radius: 5px;
+}
+
+
+.separator:hover {
+    background: linear-gradient(90deg, #f97316, #fde68a, #14b8a6, #6366f1, #0ea5e9);
+}
+
+@keyframes moveGradient {
+    0% { background-position: 400% 0; }
+    100% { background-position: -400% 0; }
+}
+
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.cuadro {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.cuadro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.cuadro:focus {
+    background: #d1d5db;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.cuadro h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #89aad4;
+    font-weight: 700;
+    border-bottom: 2px solid #0e0b0c;
+    padding-bottom: 5px;
+}
+
+.cuadro article p {
+    margin-bottom: 10px;
+}
+
+
+#habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    justify-content: center; 
+}
+
+#habilidades li {
+    background: linear-gradient(135deg, #5d93bd, #6d8f9b);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+#habilidades li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+    background: linear-gradient(135deg, #0096c7, #48cae4);
+}
+
+#habilidades li:focus {
+    background: #d1d5db;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #54739b;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.github-footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #f0f8ff;
+    border-top: 2px solid #023e8a;
+}
+
+.github-footer h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #023e8a;
+}
+
+.github-footer p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.github-footer .github-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #24292f;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.github-footer .github-link:hover {
+    background: #444c56;
+    transform: translateY(-3px);
+}
+
+
+@media(max-width:700px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+    
+    .social-bar {
+        flex-direction: row;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px 10px 0 0;
+    }
