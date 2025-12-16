@@ -5,9 +5,7 @@ body {
     padding: 0;
     line-height: 1.7;
     color: #222;
-
-    
-    background: linear-gradient(120deg, #8ac0db, #a1a1a1, #f4f3f5);
+    background: linear-gradient(135deg, #7f5af0, #22d3ee);
     background-size: 400% 400%;
     animation: gradientMove 20s ease infinite; 
 }
@@ -64,6 +62,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 40px 30px;
     flex-wrap: wrap;
@@ -81,15 +80,13 @@ header img {
     height: 250px;
     object-fit: cover;
     border-radius: 10%;
-    border: 3px solid #0d0d0e;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
 }
 
 header img:hover {
     transform: scale(1.02);
 }
-
 
 .separator {
     border: none;
@@ -152,6 +149,17 @@ main {
     margin-bottom: 10px;
 }
 
+#proyectos a {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7f5af0, #22d3ee);
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+}
 
 #habilidades ul {
     list-style: none;
@@ -188,10 +196,13 @@ main {
 
 footer {
     text-align: center;
-    padding: 25px 20px;
     background: #54739b;
     color: #fff;
     font-weight: 500;
+}
+
+footer p{
+    padding: 25px 20px;
 }
 
 
@@ -213,7 +224,7 @@ footer {
     color: #333;
 }
 
-.github-footer .github-link {
+.link {
     display: inline-block;
     padding: 12px 25px;
     background: #24292f;
@@ -224,7 +235,7 @@ footer {
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.github-footer .github-link:hover {
+.link:hover {
     background: #444c56;
     transform: translateY(-3px);
 }
